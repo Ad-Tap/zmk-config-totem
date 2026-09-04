@@ -65,7 +65,13 @@
 				key-positions = <2 11 12 13>;
 				bindings = <&tog GAME1>;
 			};
-    };
+
+			combo_bootloader {
+				timeout-ms = <50>;
+				key-positions = <20 31>;
+				bindings = <&bootloader>;
+			};
+    };	  
 
     macros {
 	    osl_shift: osl_shift {
@@ -193,7 +199,7 @@ label= "NAV"                               ;
 
                 &kp F9      &kp F10    &kp F11     &kp F12     &bt BT_SEL 3    &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp C_VOL_UP
                 &kp F5      &kp F6     &kp F7      &kp F8      &bt BT_SEL 2    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp C_MUTE  
-    &mt LGUI C_SLEEP &kp F1      &kp F2     &kp F3      &kp F4     &bt BT_SEL 1    &kp PSCRN   &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN &tog NAV
+    &bt BT_CLR  &kp F1      &kp F2     &kp F3      &kp F4	   &bt BT_SEL 1    &kp PSCRN   &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp C_VOL_DN &tog NAV
                                         &trans      &trans	   &trans		   &trans      &trans      &trans
                         >;
                 };
