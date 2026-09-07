@@ -1,0 +1,47 @@
+# Hand-authored Keymap Drawer representation of config/totem.keymap.
+# Keys are ordered exactly as the Totem matrix transform (38 positions).
+layout: {zmk_keyboard: totem}
+
+layers:
+  BASE:
+    - [Q, W, F, P, B, J, L, U, Y, "\\"]
+    - [A, R, S, T, G, M, N, E, I, O]
+    - [{t: TAB, h: GUI}, Z, X, C, D, V, K, H, ",", ".", "/", ":"]
+    - [{t: ESC, h: NUMS}, {t: SPACE, h: "_"}, {t: ";", h: CTRL}, {t: ENTER, h: ALT}, {t: BSPC, h: SYM}, {t: SHIFT, h: sticky}]
+
+  NUMS:
+    - [{t: "▽", type: trans}, {t: "▽", type: trans}, "+", {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, "7", "8", "9", ","]
+    - [{t: "▽", type: trans}, "*", "/", "=", {t: "▽", type: trans}, {t: "▽", type: trans}, "4", "5", "6", "."]
+    - [{t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, "-", {t: "▽", type: trans}, {t: "▽", type: trans},  {t: "▽", type: trans}, "1", "2", "3", "0", {t: NUMS, h: toggle}]
+    - [{t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}]
+
+  SYM:
+    - ["^", "@", "+", "$", {t: "▽", type: trans}, {t: "▽", type: trans}, "{", "}", ">", "`"]
+    - ["!", "*", "&", "=", {t: "▽", type: trans}, {t: "▽", type: trans}, "(", ")", '"', "'"]
+    - [{t: "▽", type: trans}, "%", "~", "-", "#", {t: "▽", type: trans}, {t: "▽", type: trans}, "[", "]", "<", "|", {t: "▽", type: trans}]
+    - [{t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}]
+
+  NAV:
+    - [F9, F10, F11, F12, SLEEP, HOME, PG DN, PG UP, END, VOL UP]
+    - [F5, F6, F7, F8, {t: GAME1, h: toggle}, LEFT, DOWN, UP, RIGHT, MUTE]
+    - [{t: "▽", type: trans}, F1, F2, F3, F4, BT CLR ALL, PSCRN, PREV, PLAY PAUSE, NEXT, VOL DN, {t: NAV, h: toggle}]
+    - [{t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}]
+
+  GAME 1:
+    - [T, Q, W, E, R, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+    - [SHIFT, A, S, D, F, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+    - [TAB, CTRL, Z, X, C, V, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+    - [ESC, SPACE, {t: GAME2, h: sticky}, {t: GAME1, h: toggle}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+
+  GAME 2:
+    - [{t: "∅", type: ghost}, "1", "2", "3", O, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+    - [F3, "4", "5", "6", M, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+    - [{t: "▽", type: trans}, J, "7", "8", "9", Y, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+    - [{t: "▽", type: trans}, {t: "▽", type: trans}, {t: "▽", type: trans}, {t: "∅", type: ghost}, {t: "∅", type: ghost}, {t: "∅", type: ghost}]
+
+combos:
+  - {p: [33, 36], k: {t: NAV, h: momentary}, l: [BASE], a: top}
+  - {p: [32, 37], k: CAPS WORD, l: [BASE], a: bottom}
+  - {p: [9, 19], k: BRI UP, l: [NAV], a: mid}
+  - {p: [19, 30], k: BRI DN, l: [NAV], a: mid}
+  - {p: [20, 31], k: BOOT, l: [BASE], a: top}
