@@ -76,7 +76,7 @@
 			};
 
 			combo_ctrl_bspc {
- 		 		timeout-ms = <50>;
+ 		 		timeout-ms = <100>;
 		  	 	key-positions = <12 36>;
 			    layers = <BASE>;
 		   		bindings = <&kp LC(BSPC)>;
