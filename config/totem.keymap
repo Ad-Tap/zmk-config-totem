@@ -200,7 +200,7 @@ label= "SYM"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp CARET   &kp AT		&kp PLUS	&kp DOLLAR  &trans			&trans		&kp LBRC	&kp RBRC    &kp GT		&kp GRAVE
-                &kp EXCL	&kp STAR    &kp AMPS    &kp EQUAL   &trans			&trans		&kp LPAR	&kp RPAR    &kp DQT		&kp APOS
+                &hml LGUI EXCL &hml LALT STAR &hml LCTRL AMPS &hml LSHFT EQUAL   &trans			&trans		&hmr RSHFT LPAR	&hmr RCTRL RPAR &hmr RALT DQT &hmr RGUI APOS
     &trans      &kp PRCNT   &kp TILDE   &kp MINUS   &kp HASH    &trans			&trans		&kp LBKT	&kp RBKT	&kp LT		&kp PIPE	&trans
                                         &trans      &trans		&trans			&trans		&trans		&trans      
                         >;
