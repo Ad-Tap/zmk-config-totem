@@ -145,17 +145,17 @@ label= "BASE"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃     N     ┃     E     ┃     I     ┃     O     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃  GUI/TAB  ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃           ┃
+// ┃    ESC    ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃    ESC    ┃    SPC    ┃ NUMS/;    ┃   ┃ ALT/ENTER ┃ SYM/BSPC  ┃ OSL SHIFT ┃
+//                                     ┃    TAB    ┃    SPC    ┃ NUMS/;    ┃   ┃   ENTER   ┃ SYM/BSPC  ┃ OSL SHIFT ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp F       &kp P       &kp B            &kp J        	&kp L       &kp U       &kp Y       &kp BSLH
                 &hml LGUI A &hml LALT R &hml LCTRL S &hml LSHFT T &kp G         &kp M       	&hmr RSHFT N &hmr RCTRL E &hmr RALT I &hmr RGUI O
-    &mt LCTRL TAB &kp Z      &kp X       &kp C       &kp D       &kp V           &kp K       	&kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp C_SLEEP
-                                        &kp ESC		 &spc_und   &lt NUMS SEMI   	  &kp RET 	&lt SYM BSPC  &sk RSHFT
+    &kp ESC		&kp Z      &kp X       &kp C       &kp D       &kp V           &kp K       	&kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp C_SLEEP
+                                        &kp TAB		 &spc_und   &lt NUMS SEMI   	  &kp RET 	&lt SYM BSPC  &sk RSHFT
                         >;
                 };
 
