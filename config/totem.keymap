@@ -38,19 +38,19 @@
      combos {
             compatible = "zmk,combos";
             combo_nav {
-                timeout-ms = <50>;
+                timeout-ms = <100>;
                 key-positions = <33 36>;
                 bindings = <&sl NAV>;
             };
 
             combo_capsword {
-                timeout-ms = <50>;
+                timeout-ms = <100>;
                 key-positions = <32 37>;
                 bindings = <&caps_word>;
             };
 
             combo_game1 {
-                timeout-ms = <50>;
+                timeout-ms = <100>;
                 key-positions = <11 12 13 23>;
                 bindings = <&tog GAME1>;
             };
@@ -172,8 +172,8 @@ label= "NUMS"                               ;
 //							                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
                 &kp F9           &kp F10          &kp F11          &kp F12          &trans                            &kp STAR         &kp N7           &kp N8           &kp N9           &kp PLUS
-                &hml LGUI F5     &hml LALT F6     &hml LCTRL F7    &hml LSHFT F8    &trans                            &kp PERIOD       &kp N4           &kp N5           &kp N6           &kp MINUS
-    &trans      &kp F1           &kp F2           &kp F3           &kp F4           &trans                            &kp FSLH         &kp N1           &kp N2           &kp N3           &kp N0          &tog NUMS
+                &hml LGUI F5     &hml LALT F6     &hml LCTRL F7    &hml LSHFT F8    &trans                            &kp PERIOD       &kp N4           &kp N5           &kp N6           &kp N0
+    &trans      &kp F1           &kp F2           &kp F3           &kp F4           &trans                            &kp FSLH         &kp N1           &kp N2           &kp N3           &kp MINUS        &tog NUMS
                                                   &trans           &trans           &trans                            &trans           &trans           &trans
                         >;
                 };
