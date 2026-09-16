@@ -202,7 +202,7 @@ label= "NUMS"                               ;
  bindings = <
                 &kp STAR         &kp N7           &kp N8           &kp N9           &kp PLUS						  &trans           &kp F9           &kp F10          &kp F11          &kp F12
                 &kp N0           &kp N4           &kp N5           &kp N6           &kp MINUS                         &trans           &kp F5           &kp F6           &kp F7           &kp F8
-    &tog NUMS   &kp FSLH        &kp N1           &kp N2           &kp N3            &kp PERIOD                        &trans           &kp F1           &kp F2           &kp F3           &kp F4            &tog NUMS
+    &tog NUMS   &kp FSLH         &kp N1           &kp N2           &kp N3           &kp PERIOD                        &trans           &kp F1           &kp F2           &kp F3           &kp F4            &tog NUMS
                                                   &trans           &lt SYM SPACE    &lt NUMS BSPC                     &trans           &trans           &trans
                         >;
                 };
@@ -272,7 +272,7 @@ label= "GAME 1"                             ;
                 &kp T            &kp Q            &kp X            &kp E            &kp R                             &none            &none            &none            &none            &none
                 &kp LSHIFT       &kp A            &kp W            &kp D            &kp F                             &none            &none            &none            &none            &none
     &kp TAB     &kp LCTRL        &kp Z            &kp S            &kp C            &kp V                             &none            &none            &none            &none            &none            &none
-                                                  &kp ESC          &kp SPACE        &sl GAME2                         &none            &none            &none
+                                                  &kp LALT         &kp SPACE        &sl GAME2                         &none            &none            &none
                         >;
                 };
 
@@ -283,18 +283,18 @@ label= "GAME 1"                             ;
 label= "GAME 2"                             ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //							             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//							             ┃    F3     ┃     1     ┃     2     ┃     3     ┃     0     ┃   ┃           ┃           ┃           ┃           ┃           ┃
+//							             ┃    F3     ┃     7     ┃     8     ┃     9     ┃     0     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //							             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //							             ┃    ESC    ┃     4     ┃     5     ┃     6     ┃     M     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 //							 ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-//							 ┃           ┃    ALT    ┃     7     ┃     8     ┃     9     ┃     Y     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
+//							 ┃           ┃    ALT    ┃     1     ┃     2     ┃     3     ┃     Y     ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 //							 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //							                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //							                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-                &kp F3           &kp N1           &kp N2           &kp N3           &kp N0                            &none            &none            &none            &none            &none
+                &kp F3           &kp N7           &kp N7           &kp N9           &kp N0                            &none            &none            &none            &none            &none
                 &kp ESC          &kp N4           &kp N5           &kp N6           &kp M                             &none            &none            &none            &none            &none
-    &trans      &kp LALT         &kp N7           &kp N8           &kp N9           &kp Y                             &none            &none            &none            &none            &none            &none
+    &trans      &kp LALT         &kp N1           &kp N2           &kp N3           &kp Y                             &none            &none            &none            &none            &none            &none
                                                   &trans           &trans           &trans                            &none            &none            &none
                         >;
                 };
