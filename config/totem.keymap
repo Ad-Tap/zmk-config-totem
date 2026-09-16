@@ -94,12 +94,12 @@
 			};
 			combo_r_sqr_brack {
                 timeout-ms = <50>;
-                key-positions = <23 24>;
+                key-positions = <22 23>;
                 bindings = <&kp RBKT>;
 			};
 			combo_l_sqr_brack {
                 timeout-ms = <50>;
-                key-positions = <24 25>;
+                key-positions = <23 24>;
                 bindings = <&kp LBKT>;
 			};
 
