@@ -52,6 +52,7 @@
             combo_game1 {
                 timeout-ms = <100>;
                 key-positions = <11 12 13 23>;
+				layers = <BASE GAME1>;
                 bindings = <&tog GAME1>;
             };
 
@@ -64,42 +65,50 @@
             combo_vol_dwn {
                 timeout-ms = <50>;
                 key-positions = <14 25>;
+				layers = <BASE>;
                 bindings = <&kp C_VOL_DN>;
             };
             combo_vol_up {
                 timeout-ms = <50>;
                 key-positions = <4 14>;
+				layers = <BASE>;
                 bindings = <&kp C_VOL_UP>;
             };
             combo_bright_dn {
                 timeout-ms = <50>;
                 key-positions = <15 26>;
+				layers = <BASE>;
                 bindings = <&kp C_BRI_DN>;
             };
             combo_bright_up {
                 timeout-ms = <50>;
                 key-positions = <5 15>;
+				layers = <BASE>;
                 bindings = <&kp C_BRI_UP>;
             };
 
 			combo_r_par {
                 timeout-ms = <50>;
                 key-positions = <12 13>;
+				layers = <NUMS>;
                 bindings = <&kp RPAR>;
 			};
 			combo_l_par {
                 timeout-ms = <50>;
                 key-positions = <11 12>;
+				layers = <NUMS>;
                 bindings = <&kp LPAR>;
 			};
 			combo_r_sqr_brack {
                 timeout-ms = <50>;
                 key-positions = <22 23>;
+				layers = <NUMS>;
                 bindings = <&kp RBKT>;
 			};
 			combo_l_sqr_brack {
                 timeout-ms = <50>;
                 key-positions = <23 24>;
+				layers = <NUMS>;
                 bindings = <&kp LBKT>;
 			};
 
