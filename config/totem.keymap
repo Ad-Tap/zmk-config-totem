@@ -53,6 +53,7 @@
                 timeout-ms = <100>;
                 key-positions = <11 12 13 23>;
                 bindings = <&tog GAME1>;
+                layers = <BASE>;
             };
 
             combo_bootloader {
@@ -63,24 +64,28 @@
 
             combo_vol_dwn {
                 timeout-ms = <50>;
-                key-positions = <14 25>;
+                key-positions = <15 26>;
                 bindings = <&kp C_VOL_DN>;
+                layers = <BASE>;
             };
             combo_vol_up {
                 timeout-ms = <50>;
-                key-positions = <4 14>;
+                key-positions = <5 15>;
                 bindings = <&kp C_VOL_UP>;
+                layers = <BASE>;
             };
 
             combo_bright_dn {
                 timeout-ms = <50>;
-                key-positions = <15 26>;
+                key-positions = <14 25>;
                 bindings = <&kp C_BRI_DN>;
+                layers = <BASE>;
             };
             combo_bright_up {
                 timeout-ms = <50>;
-                key-positions = <5 15>;
+                key-positions = <4 14>;
                 bindings = <&kp C_BRI_UP>;
+                layers = <BASE>;
             };
 
     };
@@ -243,7 +248,7 @@ label= "GAME 1"                             ;
                 &kp T            &kp Q            &kp X            &kp E            &kp R                             &none            &none            &none            &none            &none
                 &kp LSHIFT       &kp A            &kp W            &kp D            &kp F                             &none            &none            &none            &none            &none
     &kp TAB     &kp LCTRL        &kp Z            &kp S            &kp C            &kp V                             &none            &none            &none            &none            &none            &none
-                                                  &kp ESC          &kp SPACE        &sl GAME2                         &none            &none            &none
+                                                  &kp ESC          &kp SPACE        &sl GAME2                         &tog GAME1       &none            &none
                         >;
                 };
 
