@@ -60,29 +60,29 @@
                 bindings = <&bootloader>;
             };
 
-            combo_vol_dwn {
+            combo_bright_dwn {
                 timeout-ms = <50>;
                 key-positions = <15 26>;
-                bindings = <&kp C_VOL_DN>;
-                layers = <BASE>;
-            };
-            combo_vol_up {
-                timeout-ms = <50>;
-                key-positions = <5 15>;
-                bindings = <&kp C_VOL_UP>;
-                layers = <BASE>;
-            };
-
-            combo_bright_dn {
-                timeout-ms = <50>;
-                key-positions = <14 25>;
                 bindings = <&kp C_BRI_DN>;
                 layers = <BASE>;
             };
             combo_bright_up {
                 timeout-ms = <50>;
-                key-positions = <4 14>;
+                key-positions = <5 15>;
                 bindings = <&kp C_BRI_UP>;
+                layers = <BASE>;
+            };
+
+            combo_vol_dn {
+                timeout-ms = <50>;
+                key-positions = <14 25>;
+                bindings = <&kp C_VOL_DN>;
+                layers = <BASE>;
+            };
+            combo_vol_up {
+                timeout-ms = <50>;
+                key-positions = <4 14>;
+                bindings = <&kp C_VOL_UP>;
                 layers = <BASE>;
             };
 
@@ -162,14 +162,14 @@ label= "BASE"                               ;
 //							             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //							             ┃     A     ┃     R     ┃     S     ┃     T     ┃     G     ┃   ┃     M     ┃     N     ┃     E     ┃     I     ┃     O     ┃
 //							 ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-//							 ┃    TAB    ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃    MUTE   ┃
+//							 ┃    TAB    ┃     Z     ┃     X     ┃     C     ┃     D     ┃     V     ┃   ┃     K     ┃     H     ┃     ,     ┃     .     ┃     /     ┃     '     ┃
 //							 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //							                                     ┃    ESC    ┃    SPC    ┃ NUMS/;    ┃   ┃   ENTER   ┃ SYM/BSPC  ┃ OSL SHIFT ┃
 //							                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
                 &kp Q            &kp W            &kp F            &kp P            &kp B                             &kp J            &kp L            &kp U            &kp Y            &kp BSLH
                 &hml LGUI A      &hml LALT R      &hml LCTRL S     &hml LSHFT T     &kp G                             &kp M            &hmr RSHFT N     &hmr RCTRL E     &hmr RALT I      &hmr RGUI O
-    &kp TAB     &kp Z            &kp X            &kp C	           &kp D            &kp V                             &kp K            &kp H            &kp COMMA        &kp DOT          &kp FSLH         &kp C_MUTE
+    &kp TAB     &kp Z            &kp X            &kp C	           &kp D            &kp V                             &kp K            &kp H            &kp COMMA        &kp DOT          &kp FSLH         &kp APOS
                                                   &kp ESC          &spc_und         &lt NUMS SEMI                     &lt NAV RET      &lt SYM BSPC     &sk RSHFT
                         >;
                 };
@@ -182,18 +182,18 @@ label= "BASE"                               ;
 label= "NUMS"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //							             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//							             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃     7     ┃     8     ┃     9     ┃     .     ┃
+//							             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃     7     ┃     8     ┃     9     ┃           ┃
 //							             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //							             ┃           ┃           ┃           ┃           ┃           ┃   ┃     .     ┃     4     ┃     5     ┃     6     ┃     0     ┃
 //							 ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-//							 ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃     1     ┃     2     ┃     3     ┃     /     ┃ TOG NUMS  ┃
+//							 ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     ,     ┃     1     ┃     2     ┃     3     ┃     /     ┃ TOG NUMS  ┃
 //							 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //							                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //							                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
-                &kp CARET        &kp AT           &kp PLUS         &kp DOLLAR       &trans                            &none            &kp N7           &kp N8           &kp N9           &kp PERIOD
+                &kp CARET        &kp AT           &kp PLUS         &kp DOLLAR       &trans                            &none            &kp N7           &kp N8           &kp N9           &none
                 &hml LGUI EXCL   &hml LALT STAR   &hml LCTRL AMPS  &hml LSHFT EQUAL &trans                            &kp PERIOD       &kp N4           &kp N5           &kp N6           &kp N0
-    &trans      &kp PRCNT        &kp TILDE        &kp MINUS        &kp HASH         &trans                            &none            &kp N1           &kp N2           &kp N3           &kp FSLH         &tog NUMS
+    &trans      &kp PRCNT        &kp TILDE        &kp MINUS        &kp HASH         &trans                            &kp COMMA        &kp N1           &kp N2           &kp N3           &kp FSLH         &tog NUMS
                                                   &trans           &trans           &trans                            &trans           &trans           &trans
                         >;
                 };
@@ -207,9 +207,9 @@ label= "SYM"                                ;
 //							             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //							             ┃     ^     ┃     @     ┃     +     ┃     $     ┃           ┃   ┃           ┃     {     ┃     }     ┃     >     ┃     `     ┃
 //							             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//							             ┃     !     ┃     *     ┃     &     ┃     =     ┃           ┃   ┃           ┃     (     ┃     )     ┃     "     ┃     '     ┃
+//							             ┃     !     ┃     *     ┃     &     ┃     =     ┃           ┃   ┃           ┃     (     ┃     )     ┃     "     ┃     |     ┃
 //							 ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-//							 ┃           ┃     %     ┃     ~     ┃     -     ┃     #     ┃           ┃   ┃           ┃     [     ┃     ]     ┃     <     ┃     |     ┃           ┃
+//							 ┃           ┃     %     ┃     ~     ┃     -     ┃     #     ┃           ┃   ┃           ┃     [     ┃     ]     ┃     <     ┃     ?     ┃           ┃
 //							 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //							                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //							                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -232,14 +232,14 @@ label= "NAV"                                ;
 //							             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //							             ┃    F5     ┃    F6     ┃    F7     ┃    F8     ┃           ┃   ┃   LEFT    ┃   DOWN    ┃    UP     ┃   RIGHT   ┃   BT NXT  ┃
 //							 ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-//							 ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃           ┃   ┃   PSCRN   ┃   PREV    ┃ PLAY/PAUSE┃   NEXT    ┃   BT_CLR  ┃  TOG NAV  ┃
+//							 ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F4     ┃           ┃   ┃   MUTE    ┃   PREV    ┃ PLAY/PAUSE┃   NEXT    ┃   BT_CLR  ┃  TOG NAV  ┃
 //							 ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //							                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //							                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
                 &kp F9           &kp F10          &kp F11          &kp F12          &none                             &kp HOME         &kp PG_DN        &kp PG_UP        &kp END          &kp C_SLEEP
                 &hml LGUI F5     &hml LALT F6     &hml LCTRL F7    &hml LSHFT F8    &none                             &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &bt BT_NXT
-    &trans      &kp F1           &kp F2           &kp F3           &kp F4           &none                             &kp PSCRN        &kp C_PREV       &kp C_PP         &kp C_NEXT       &bt BT_CLR	   &tog NAV
+    &trans      &kp F1           &kp F2           &kp F3           &kp F4           &none                             &kp MUTE         &kp C_PREV       &kp C_PP         &kp C_NEXT       &bt BT_CLR	   &tog NAV
                                                   &trans           &trans           &trans                            &trans           &trans           &trans
                         >;
                 };
